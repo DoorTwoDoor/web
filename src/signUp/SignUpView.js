@@ -1,42 +1,22 @@
 import React, { Component } from 'react';
 import {
   Button,
-  Divider,
   Modal,
 } from 'semantic-ui-react';
 
-import SocialMediaButton from '../common/components/SocialMediaButton';
-import SignUpForm from './components/SignUpForm';
+import ModalActions from '../common/components/ModalActions';
+import ModalHeader from '../common/components/ModalHeader';
+import ModalContent from './components/ModalContent';
 
 class SignUpView extends Component {
   render() {
+    const trigger = <Button>Sign Up</Button>;
+
     return (
-      <Modal
-        closeIcon={'close'}
-        trigger={<Button>Sign Up</Button>}
-      >
-        <Modal.Header>
-          Sign Up
-        </Modal.Header>
-        <Modal.Content>
-          <SocialMediaButton
-            color={'facebook'}
-            name={'facebook f'}
-            text={'Sign Up with Facebook'}
-          />
-          <Divider horizontal>
-            Or
-          </Divider>
-          <SignUpForm />
-        </Modal.Content>
-        <Modal.Actions>
-          <p>
-            <span>Already have an account? </span>
-            <a href={'http://www.google.com'}>
-              Log In
-            </a>
-          </p>
-        </Modal.Actions>
+      <Modal closeIcon={'close'} trigger={trigger}>
+        <ModalHeader text={'Sign Up'} />
+        <ModalContent />
+        <ModalActions type={'sign up'} />
       </Modal>
     );
   }

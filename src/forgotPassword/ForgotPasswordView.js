@@ -8,18 +8,18 @@ import ModalActions from '../common/components/ModalActions';
 import ModalHeader from '../common/components/ModalHeader';
 import ModalContent from './components/ModalContent';
 
-class LogInView extends Component {
+class ForgotPasswordView extends Component {
   render() {
-    const trigger = <Button>Log In</Button>;
+    const trigger = <Button>Forgot Password</Button>;
 
     return (
       <Modal closeIcon={'close'} trigger={trigger}>
-        <ModalHeader text={'Log In'} />
+        <ModalHeader text={'Forgot Password'} />
         <ModalContent />
-        <ModalActions type={'log in'} />
+        <ModalActions type={'forgot password'} />
       </Modal>
     );
   }
 }
 
-export default LogInView;
+export default ForgotPasswordView;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
 
-class SignUpFormNameField extends Component {
+class NameField extends Component {
   render() {
     return (
       <Form.Group widths={'equal'}>
@@ -12,4 +12,4 @@ class SignUpFormNameField extends Component {
   }
 }
 
-export default SignUpFormNameField;
+export default NameField;

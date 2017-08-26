@@ -5,9 +5,9 @@ import {
   getDayOptions,
   getMonthOptions,
   getYearOptions,
-} from '../../utilities/Helper';
+} from '../../../utilities/Helper';
 
-class SignUpFormBirthdayField extends Component {
+class BirthdayField extends Component {
   render() {
     const dayOptions = getDayOptions(2017, 2);
     const monthOptions = getMonthOptions();
@@ -35,4 +35,4 @@ class SignUpFormBirthdayField extends Component {
   }
 }
 
-export default SignUpFormBirthdayField;
+export default BirthdayField;

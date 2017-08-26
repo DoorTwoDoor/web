@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
 
-import LogInFormForgotPasswordLink from './LogInFormForgotPasswordLink';
+import FormAgreementText from '../../../../common/components/FormAgreementText';
+import FormButton from '../../../../common/components/FormButton';
+import ForgotPasswordLink from './ForgotPasswordLink';
 
 class LogInForm extends Component {
   render() {
@@ -13,10 +15,9 @@ class LogInForm extends Component {
           placeholder={'Password'}
           type={'password'}
         />
-        <LogInFormForgotPasswordLink />
-        <Form.Button color={'blue'} fluid>
-          Log In
-        </Form.Button>
+        <ForgotPasswordLink />
+        <FormButton text={'Log In'} />
+        <FormAgreementText type={'log in'}/>
       </Form>
     );
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
 
-class SignUpFormBirthdayLabel extends Component {
+class BirthdayLabel extends Component {
   render() {
     return (
       <Form.Field>
@@ -9,11 +9,12 @@ class SignUpFormBirthdayLabel extends Component {
           Birthday
         </label>
         <p>
-          To sign up, you must be 18 or older. Other people won’t see your birthday.
+          <span>To sign up, you must be 18 years old or older. </span>
+          <span>Other people won’t see your birthday.</span>
         </p>
       </Form.Field>
     );
   }
 }
 
-export default SignUpFormBirthdayLabel;
+export default BirthdayLabel;

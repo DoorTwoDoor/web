@@ -4,6 +4,7 @@ import { Segment } from 'semantic-ui-react';
 import NavigationBar from './common/components/NavigationBar';
 import LogInView from './logIn/LogInView';
 import SignUpView from './signUp/SignUpView';
+import ForgotPasswordView from './forgotPassword/ForgotPasswordView';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <NavigationBar />
         <LogInView />
         <SignUpView />
+        <ForgotPasswordView />
       </Segment>
     );
   }

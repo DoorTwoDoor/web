@@ -4,7 +4,6 @@ import {
   Container,
   Menu,
 } from 'semantic-ui-react';
-import PropTypes from 'prop-types';
 
 class NavigationBar extends Component {
   render() {
