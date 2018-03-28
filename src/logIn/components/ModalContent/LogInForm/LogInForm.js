@@ -9,8 +9,13 @@ class LogInForm extends Component {
   render() {
     return (
       <Form>
-        <Form.Input name={'emailAddress'} placeholder={'Email Address'} />
         <Form.Input
+          icon={'mail'}
+          name={'emailAddress'}
+          placeholder={'Email Address'}
+        />
+        <Form.Input
+          icon={'lock'}
           name={'password'}
           placeholder={'Password'}
           type={'password'}

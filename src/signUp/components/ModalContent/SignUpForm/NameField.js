@@ -5,8 +5,16 @@ class NameField extends Component {
   render() {
     return (
       <Form.Group widths={'equal'}>
-        <Form.Input name={'firstName'} placeholder={'First Name'} />
-        <Form.Input name={'lastName'} placeholder={'Last Name'} />
+        <Form.Input
+          icon={'user'}
+          name={'firstName'}
+          placeholder={'First Name'}
+        />
+        <Form.Input
+          icon={'user'}
+          name={'lastName'}
+          placeholder={'Last Name'}
+        />
       </Form.Group>
     );
   }

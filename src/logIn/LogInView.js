@@ -10,7 +10,7 @@ import ModalContent from './components/ModalContent';
 
 class LogInView extends Component {
   render() {
-    const trigger = <Button>Log In</Button>;
+    const trigger = <Button inverted>Log In</Button>;
 
     return (
       <Modal closeIcon={'close'} trigger={trigger}>

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {
-  Button,
   Container,
   Menu,
 } from 'semantic-ui-react';
 
 class NavigationBar extends Component {
   render() {
+    const { logInView } = this.props;
+    const { signUpView } = this.props;
+
     return (
       <Container>
         <Menu
@@ -18,16 +20,25 @@ class NavigationBar extends Component {
           stackable
           style={styles.menu}
         >
-          <Menu.Item header>DoorTwoDoor</Menu.Item>
+          <Menu.Item header>
+            DoorTwoDoor
+          </Menu.Item>
           <Menu.Menu position={'right'}>
-            <Button inverted>Log In</Button>
-            <Button inverted>Sign Up</Button>
+            {logInView}
+            {signUpView}
           </Menu.Menu>
         </Menu>
       </Container>
     );
   }
 }
+
+/*
+NavigationBar.propTypes = {
+  login: PropTypes.isRequired,
+
+}
+*/
 
 const styles = {
   menu: {
